@@ -27,13 +27,20 @@ Slidev provides official [skills](https://code.claude.com/docs/en/skills) for AI
 
 ### Installation
 
-Install the Slidev skill to your AI coding agent:
+Install the Slidev skill to your AI coding agent with the [skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
 npx skills add slidevjs/slidev
 ```
 
-The source code of the skill is [here](https://github.com/slidevjs/slidev/tree/main/skills/slidev).
+If you use Claude Code, you can also install the skill as a plugin from the Slidev marketplace. This works without Node.js on your machine:
+
+```
+/plugin marketplace add slidevjs/slidev
+/plugin install slidev@slidev-plugins
+```
+
+You can also copy the [`skills/slidev`](https://github.com/slidevjs/slidev/tree/main/skills/slidev) folder into your agent's skills directory by hand, for example `~/.claude/skills/slidev` for Claude Code.
 
 ### Example Prompts
 
